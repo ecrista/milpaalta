@@ -52,3 +52,40 @@
   /*opacity: 1.0;*/
 }
 
+.texflo {
+}
+
+.footer-g {
+  background-color: #17533f !important;
+  background-image: url(../../assets/img/textura.png);
+  background-repeat: repeat;
+}
+
+.bg-m {
+  background-color: #712130 !important;
+  background-color: var(--primary);
+}
+
+:root {
+  --primary: rgb(113, 33, 48);
+  --secondary: rgb(28, 52, 45);
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+button {
+  margin: 10px;
+  background: #A42145 !important;
+  color: white !important;
+}
+
+nav {
+  margin-bottom: -10px;
+  margin-top: -16px;
+  padding-bottom: 0px;
+  background: #FFFF !important;
+  color: white !important;
+}
+
