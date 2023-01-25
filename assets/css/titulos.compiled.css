@@ -1,0 +1,32 @@
+.txtf p {
+  text-decoration: none;
+  -webkit-transform: perspective(2.5em) rotateX(1deg) scaleY(1);
+  -moz-transform: perspective(2.5em) rotateX(1deg) scaleY(1);
+  -ms-transform: perspective(2.5em) rotateX(1deg) scaleY(1);
+  -o-transform: perspective(2.5em) rotateX(1deg) scaleY(1);
+  transform: perspective(2.5em) rotateX(1deg) scaleY(1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  line-height: 0.8;
+  color: #fbd62a;
+  text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #7f6303, 0 3px 0 #846703, 0 5px 0 #896b03, 0 7px 0 #8e6f03, 0 9px 0 #937203, 0 6px 50px rgba(252, 223, 92, 0.8);
+}
+
+.txtf p:first-line {
+  font-size: 0.8em;
+}
+
+.txtf p:hover {
+  -webkit-transform: perspective(8em) rotateX(11deg) scale(1.2);
+  -moz-transform: perspective(8em) rotateX(11deg) scale(1.2);
+  -ms-transform: perspective(8em) rotateX(11deg) scale(1.2);
+  -o-transform: perspective(8em) rotateX(11deg) scale(1.2);
+  transform: perspective(8em) rotateX(11deg) scale(1.2);
+  text-shadow: 0 -1px 15px black, 0 1px 0 #7f6303, 0 2px 0 #846703, 0 0px 0 #896b03, 0 1px 0 #8e6f03, 0 2px 0 #937203, 0 2px 30px rgba(252, 223, 92, 0.6);
+}

@@ -15,14 +15,56 @@
   left: 10px;
 }
 
-.centrado {
-  font-family: 'Montserrat';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  font-size: 4.5em;
+@media (min-width: 992px) {
+  .centrado {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 79px !important;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .centrado {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 4.5em;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 730px) {
+  .centrado {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 4.5em;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .centrado {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 60px !important;
+    padding-right: 20%;
+  }
 }
 
 .tex-w {
@@ -38,11 +80,11 @@
 }
 
 .textohb {
-  color: #bc945a !important;
+  color: #ffffff !important;
   font-family: 'Montserrat';
   font-weight: bold;
   letter-spacing: .05em;
-  text-shadow: -1px -1px 1px #efede3, 0px 1px 0 #2e2e2e, 0px 2px 0 #2c2c2c, 0px 3px 0 #2a2a2a, 0px 4px 0 #282828, 0px 5px 0 #262626, 0px 6px 0 #242424, 0px 7px 0 #222, 0px 8px 0 #202020, 0px 9px 0 #1e1e1e, 0px 10px 0 #1c1c1c, 0px 11px 0 #1a1a1a, 0px 12px 0 #181818, 0px 13px 0 #161616, 0px 14px 0 #141414, 0px 15px 0 #121212, 2px 20px 5px rgba(0, 0, 0, 0.9), 5px 23px 5px rgba(0, 0, 0, 0.3), 8px 27px 8px rgba(0, 0, 0, 0.5), 8px 28px 35px rgba(0, 0, 0, 0.9);
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .imagend {
@@ -70,6 +112,7 @@
 :root {
   --primary: rgb(113, 33, 48);
   --secondary: rgb(28, 52, 45);
+  --texto: #bc945a;
 }
 
 p {
@@ -88,75 +131,6 @@ nav {
   padding-bottom: 0px;
   background: #FFFF !important;
   color: white !important;
-}
-
-.ribbon {
-  width: 600px;
-  position: absolute;
-  left: 50%;
-  margin-left: -300px;
-  text-align: center;
-  font-size: 32px !important;
-  background: #437368;
-  background: linear-gradient(to bottom, #437368, #437368);
-  box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
-  font-family: 'Helvetica Neue',Helvetica, sans-serif;
-}
-
-.ribbon p {
-  font-size: 38px !important;
-  color: #BC945A;
-  text-shadow: #D65C5C 0 1px 0;
-  margin: 0px;
-  padding: 18px 10px;
-}
-
-.ribbon:before, .ribbon:after {
-  content: '';
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #C23A3A;
-  z-index: -1;
-}
-
-.ribbon:before {
-  left: -2em;
-  border-right-width: 1.5em;
-  border-left-color: transparent;
-  box-shadow: rgba(0,0,0,0.4) 1px 1px 1px;
-}
-
-.ribbon:after {
-  right: -2em;
-  border-left-width: 1.5em;
-  border-right-color: transparent;
-  box-shadow: rgba(0,0,0,0.4) -1px 1px 1px;
-}
-
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-  border-color: #871616 transparent transparent transparent;
-  position: absolute;
-  display: block;
-  border-style: solid;
-  bottom: -1em;
-  content: '';
-}
-
-.ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
-}
-
-.ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
-}
-
-.ribbon-stitches-top {
-  margin-top: 2px;
-  border-top: 1px dashed rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 .lightbox-gallery {
@@ -188,8 +162,6 @@ nav {
     margin-bottom: 10px;
   }
 }
-
-/* Lighbox CSS */
 
 .lightbox {
   display: none;
@@ -231,27 +203,29 @@ nav {
   text-rendering: optimizeLegibility;
 }
 
-tx3::before {
-  content: "";
-  width: 100%;
-  height: 750px;
-  position: absolute;
-  top: -200px;
-  left: 10px;
-  transform: rotate(55deg);
-  background: rgba(206,188,155,.7);
-  background: -moz-linear-gradient(left, rgba(206,188,155,.7) 0%, rgba(42,31,25,0) 65%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(206,188,155,.7)), color-stop(65%, rgba(42,31,25,0)));
-  background: -webkit-linear-gradient(left, rgba(206,188,155,.7) 0%, rgba(42,31,25,0) 65%);
-  background: -o-linear-gradient(left, rgba(206,188,155,.7) 0%, rgba(42,31,25,0) 65%);
-  background: -ms-linear-gradient(left, rgba(206,188,155,.7) 0%, rgba(42,31,25,0) 65%);
-  background: linear-gradient(to right, rgba(206,188,155,.7) 0%, rgba(42,31,25,0) 65%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=0.7 );
+.txth {
+  margin: 50px auto;
+  text-align: center;
 }
 
-#text3d {
-  color: #70869d;
-  letter-spacing: .15em;
-  text-shadow: -1px -1px 1px #efede3, 0px 1px 0 #2e2e2e, 0px 2px 0 #2c2c2c, 0px 3px 0 #2a2a2a, 0px 4px 0 #282828, 0px 5px 0 #262626, 0px 6px 0 #242424, 0px 7px 0 #222, 0px 8px 0 #202020, 0px 9px 0 #1e1e1e, 0px 10px 0 #1c1c1c, 0px 11px 0 #1a1a1a, 0px 12px 0 #181818, 0px 13px 0 #161616, 0px 14px 0 #141414, 0px 15px 0 #121212, 2px 20px 5px rgba(0, 0, 0, 0.9), 5px 23px 5px rgba(0, 0, 0, 0.3), 8px 27px 8px rgba(0, 0, 0, 0.5), 8px 28px 35px rgba(0, 0, 0, 0.9);
+.txtf {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 700;
+  font-family: 'Exo 2';
+  line-height: 0.8;
+  color: lighten(var(--texto), 10%);
+  text-shadow: 0 -1px 15px rgba(0,0,0,0.9), 0 1px 0 adjust-hue(darken(var(--texto), 22%), -4deg), 0 3px 0 adjust-hue(darken(var(--texto), 21%), -3deg), 0 5px 0 adjust-hue(darken(var(--texto), 20%), -3deg), 0 7px 0 adjust-hue(darken(var(--texto), 19%), -3deg), 0 9px 0 adjust-hue(darken(var(--texto), 18%), -3deg), 0 6px 50px transparentize(lighten(var(--texto), 20%), 0.2);
+}
+
+.txtf > &:first-line {
+  font-size: 0.8em;
+}
+
+.txtf > &:hover {
+  text-shadow: 0 -1px 15px black, 0 1px 0 adjust-hue(darken(var(--texto), 22%), -3deg), 0 2px 0 adjust-hue(darken(var(--texto), 21%), -3deg), 0 0px 0 adjust-hue(darken(var(--texto), 20%), -3deg), 0 1px 0 adjust-hue(darken(var(--texto), 19%), -3deg), 0 2px 0 adjust-hue(darken(var(--texto), 18%), -3deg), 0 2px 30px transparentize(lighten(var(--texto), 20%), 0.4);
 }
 
